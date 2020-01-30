@@ -1,10 +1,16 @@
-﻿body {
+﻿@import url('style2.css');
+body {
+}
+
+li{
+    color: #F00;
 }
 
 p {
     border: 2px solid #313d78;
     /*height: 200px;*/
     background-color: #0EF;
+    color: #F00;
     
 }
 
@@ -21,6 +27,15 @@ span {
     border: 2px solid #F00;
     /*height: 50%;
     width: 80%;*/
+}
+
+span:hover{
+    /*background-color: #F0F;*/
+    font-family: Arial;
+}
+
+ol li::after{
+    content: " - Item";
 }
 
 strong {
