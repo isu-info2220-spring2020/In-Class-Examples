@@ -1,24 +1,21 @@
 ﻿@import url('style2.css');
+
 body {
 }
 
-li{
-    color: #F00;
-}
 
 p {
     border: 2px solid #313d78;
     /*height: 200px;*/
     background-color: #0EF;
     color: #F00;
-    
 }
 
-div{
+div {
     border: 10px solid #0A0;
-   padding: 1em;
-   background-color: #EFE;
-   font-size: 1.5em;
+    padding: 1em;
+    background-color: #EFE;
+    font-size: 1.5em;
 }
 
 
@@ -29,13 +26,17 @@ span {
     width: 80%;*/
 }
 
-span:hover{
-    /*background-color: #F0F;*/
-    font-family: Arial;
+    span:hover {
+        /*background-color: #F0F;*/
+        font-family: Arial;
+    }
+
+ol li::after {
+    content: " - Item";
 }
 
-ol li::after{
-    content: " - Item";
+li::before, ol li::after{
+    content: "&"
 }
 
 strong {
@@ -50,4 +51,21 @@ strong {
     position: absolute;
     top: 50px;
     left: 100px;
+}
+
+li {
+    color: #F00;
+}
+
+.first {
+    /*Applies to first class elements*/
+    font-weight: bold;
+}
+
+.second{
+   text-decoration: underline;
+}
+
+.third{
+
 }
