@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h1>Timeout test</h1>
+    <p id="output"></p>
+    <script>
+        counter = 0;
+        para = document.getElementById("output");
+
+        function countUp() {
+            para.innerText = counter;
+            counter++;
+            if (counter >= 10) {
+                clearInterval(counterHandle);
+            }
+        }
+
+        counterHandle = setInterval(countUp, 200);
+    </script>
+
+</body>
+</html>
