@@ -41,3 +41,29 @@ function somethingElse() {
 
 }
 
+
+function outPut(aValue) {
+    var str = "";
+    str += "Apple\n";
+    str += aValue + aValue;
+    alert(str);
+}
+
+//outPut("Banana");
+//outPut(21);
+
+
+function Animal(aniName) {
+    this.name = aniName;
+    this.getName = GetName;
+
+    function GetName() {
+        var name = "oops";
+        return "Boo " + this.name;
+    }
+}
+
+var an1 = new Animal("Hoo");
+var animalHolder = new Animal();
+
+alert(an1.getName());

@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<!-- Based on HTML5 Bones | http://html5bones.com -->
+<!--Source: https://gist.github.com/davidcochran/7190172-->
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Page Title</title>
+    <meta name="description" content="">
+    <script defer src="scripts/dom.js"></script>
+    <style>
+        span {
+            border: 3px solid #0F0;
+        }
+
+        .magic {
+            background-color: #F00;
+        }
+
+        .hoopy {
+            background-color: #00F;
+        }
+    </style>
+</head>
+<body>
+    <header role="banner">
+        <a class="brand">Site Title or Logo</a>
+        <nav role="navigation">
+            <ul class="navbar">
+                <li>
+                    <a id="hypGoogle" href="http://www.google.com">
+                        Google
+                        somethign else
+                    </a>
+                </li>
+                <li><a id="hypBing" href="http://www.bing.com">Bing</a></li>
+                <li><a id="hypISU" href="http://www.isu.edu">ISU</a></li>
+                <li><a id="hypSome" href="http://www.jdholmes.net">Some Page</a></li>
+            </ul>
+        </nav>
+    </header>
+    <button class="magic" id="myButton" onclick="button_Click()">Clicked</button>
+
+    <main role="main">
+        <h1>Page Heading</h1>
+        <p>Use the HTML5 <code>main</code> element to wrap the central content of your page.</p>
+        <h2>Page sub-heading</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+        <p>Vivamus a sollicitudin mauris. Fusce in justo vel tortor porta facilisis vitae pretium enim. Proin quis magna vel ipsum egestas blandit. </p>
+        <section id="moreContent" data-magic="boo">
+            <p>Suspendisse <i>aliquam suscipit</i> commodo. Fusce hendrerit et augue nec venenatis. Curabitur vel posuere ante. In accumsan nec quam ut tincidunt. </p>
+            <p>Maecenas <b>lobortis turpis</b> metus, a egestas lorem suscipit vel. Nulla eu facilisis enim. Sed nec enim commodo, sagittis turpis ut, dictum enim. </p>
+            <p>Duis <u>convallis dolor feugiat</u> lacus aliquam, consequat lacinia dui vestibulum. Ut pharetra orci sit amet purus euismod, at euismod orci tristique. </p>
+        </section>
+        <h2>Sub-heading</h2>
+        <ul>
+            <li>List item</li>
+            <li>List item</li>
+            <li>List item</li>
+            <li>List item</li>
+        </ul>
+        <h2>Sub-heading</h2>
+        <ol>
+            <li>List item</li>
+            <li>List item</li>
+            <li>List item</li>
+            <li>List item</li>
+        </ol>
+        <div id="contact-form">
+            <!--source: http://www.eightonefive.com/2011/10/20/create-a-simple-html5-contact-form/ -->
+            <form id="contact" method="post" action="http://teaching.jdholmes.net/postvget/reader/">
+                <fieldset>
+
+                    <label for="name">Name</label>
+                    <input id="txtName" type="text" name="name">
+
+                    <label for="email">E-mail</label>
+                    <input id="txtEmail" type="email" name="email">
+
+                    <label for="phone">Phone</label>
+                    <input id="txtPhone" type="text" name="phone">
+
+                    <label for="website">Website</label>
+                    <input id="txtWebsite" type="url" name="url">
+
+                    <label for="message">Question/Comment</label>
+                    <textarea id="txtMessage" name="message"></textarea>
+
+                    <input type="submit" name="submit" id="btnSubmit" value="Send Message" />
+
+                </fieldset>
+            </form>
+        </div><!-- /end #contact-form -->
+        <table id="tblContacts"></table>
+
+    </main><!-- End primary page content -->
+    <aside role="complementary">
+        <h3>Secondary page content</h3>
+        <p>Use the <code>aside</code> element if you need to include content that is not central to the focus of the page or is clearly of secondary importance.</p>
+    </aside>
+    <footer role="contentinfo">
+        <div>Page footer content</div>
+        <small>Copyright &copy; <time datetime="2013">2013</time></small>
+    </footer>
+
+
+</body>
+</html>
