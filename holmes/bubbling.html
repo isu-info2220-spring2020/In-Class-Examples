@@ -1,0 +1,171 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Bubbling and Delegation</title>
+    <script src="scripts/bubbling.js"></script>
+    <style>
+        .selected{
+            border: 3px solid #F00;
+        }
+        .selectedCurrent{
+            border: 3px solid #00F;
+        }
+    </style>
+</head>
+<body>
+    <div id="myDiv">
+        <p id="para1">Paragraph One</p>
+        <p id="para2">Paragraph Two</p>
+        <button id="btnClick">Click Me</button>
+        <a id="hypOne" href="http://www.isu.edu">
+            <!--<a id="hypOne" href="#">-->
+            <!--href="http://www.isu.edu"-->
+            <img id="imgOne" src="images/dog.gif" />
+            <span id="spnOne">Dog Pic</span>
+        </a>
+        <a id="hypTwo" onclick="return cancelGoogle()" href="http://www.google.com">
+            Go to Google.
+        </a>
+        <p class="magic" onclick="paraClicked()">Paragraph Two</p>
+        <p class="magic" onclick="paraClicked()">Paragraph Two</p>
+        <p class="magic" onclick="paraClicked()">Paragraph Two</p>
+        <p class="magic" onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p onclick="paraClicked()">Paragraph Two</p>
+        <p id="paralast">Paragraph Two</p>
+        <img src="images/Heat-Exhaustion-2.gif" />
+        <img src="images/dog.gif" />
+    </div>
+</body>
+</html>
