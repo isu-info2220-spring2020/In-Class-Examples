@@ -15,13 +15,28 @@ function loadStuff() {
         return false;
     };
 
-    div.addEventListener("click",
-        function (e) {
-            markStuff(e);
-            //this.className = "selected";
-            //alert("div was clicked");
-        }
-    );
+
+    //div.addEventListener("click",
+    //    function (e) {
+    //        e = e || window.event;
+    //        ctrg = e.currentTarget;
+    //        alert(this + " +++ " + ctrg);
+
+    //        markStuff(e);
+    //        //this.className = "selected";
+    //        //alert("div was clicked");
+    //    }
+
+    div.onclick = function (e) {
+        e = e || window.event;
+        ctrg = e.currentTarget;
+        alert(this + " +++ " + ctrg);
+
+        markStuff(e);
+        //this.className = "selected";
+        //alert("div was clicked");
+    };
+    
 
     spn.onclick = function () {
         alert("Span was clicked.");
@@ -34,7 +49,7 @@ function cancelGoogle() {
     alert("no going to google");
     return false;
 }
-
+//window.markStuff(event);
 function markStuff(evt) {
     evt = evt || window.event;
     trg = evt.target ||
@@ -50,8 +65,12 @@ function markStuff(evt) {
     ctrg.className = "selectedCurrent";
 
     
-//    alert(this === ctrg);
+    alert(this + " ### " + ctrg);
+    alert(this === ctrg);
 }
+
+//document.getElementById("thing")[0];
+//document.getElementsByTagName("thing")[0];
 
 function paraClicked(e) {
     //e = e || window.event;
