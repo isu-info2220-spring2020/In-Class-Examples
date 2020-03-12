@@ -41,7 +41,7 @@
             myEvent.srcElement; // Cross browser
 
         //alert(this.tagName);
-        if (trget.tagName === "SPAN") {
+        if (trget.tagName.toUpperCase() === "SPAN") {
             //alert(trget.id);
             if (this.id === "span_taylor") {
                 myEvent.stopPropagation();
