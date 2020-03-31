@@ -13,14 +13,52 @@
             color: #0A0;
         }
         p{
+            height: 100px;
             color: #00C;
             border: 2px solid #F0F;
+        }
+        .selected {
+            font-weight: bold;
+            color: #AA0;
+            font-size: 3em;
+            display: inline-block;
+            border: 2px solid #0A0;
         }
     </style>
 </head>
 <body>
-    <p id="paraOne">1</p>
-    <p class="second">2</p>
+    <p id="paraOne">1<span>Span</span></p>
+    <p class="second">2<span>Span 2</span></p>
     <p>Third</p>
+    <span>Outside Span</span>
+    <ul>
+        <li>
+            Fruit:
+            <ul id="fruit">
+                <li>Apple</li>
+                <li>Banana</li>
+                <li>Cucumber</li>
+                <li>Dragon Fruit</li>
+            </ul>
+        </li>
+        <li>
+            Animals:
+            <ul>
+                <li>Ape</li>
+                <li id="baboon">Baboon</li>
+                <li>Chipmunk</li>
+            </ul>
+        </li>
+        <li>
+            Books:
+            <ul>
+                <li>Moby Dick</li>
+                <li>Wizard of Oz</li>
+                <li class="school">The Goal</li>
+
+            </ul>
+        </li>
+    </ul>
+
 </body>
 </html>
